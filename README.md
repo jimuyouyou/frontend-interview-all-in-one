@@ -1,5 +1,8 @@
-# Frontend interview practices - all in one mini framework
+# Frontend interview practices - all in one mini app
+- practice all advanced technologies in one javascipt app
 
+# Features
+- test
 
 # Advanced javascript technologies
 - throttle

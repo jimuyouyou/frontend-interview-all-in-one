@@ -1,4 +1,9 @@
 (function(){
+  // key idea beheind
+  // use one internal var to remember previous values
+  // return new func with same args as the old func
+  // call the new func whenever needed
+  
   function debounce(func, delay=300) {
     let timer; // using closure to keep only one been executed
 
@@ -40,7 +45,8 @@
 
   class FA {
     debounce() {
-     console.log('deb'); 
+     console.log('deb');
+     console.log(this._count([1, 2, 3, 5, 2, 3, 1]));
     }
 
     throttle() {
@@ -59,7 +65,7 @@
   globalThis.FA = new FA();
 })();
 
-// FA.debounce();
+FA.debounce();
 // FA.throttle();
 // FA.memo();
-console.log(FA._count([1, 2, 3, 5, 2, 3, 1]));
+// console.log(FA._count([1, 2, 3, 5, 2, 3, 1]));
